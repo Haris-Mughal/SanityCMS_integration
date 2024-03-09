@@ -1,4 +1,4 @@
-// import React, { useEffect, useState } from "react";
+import React from "react";
 import client from "./lib/contentfulClient";
 // import Image from "next/image";
 
@@ -46,9 +46,9 @@ const Home: React.FC<Services> = async () => {
                 <div className="text-[12px] font-normal text-start">
                   {service.description}
                 </div>
-                {/* <div>
-                <Image src={service.image} alt={service.title} />
-              </div> */}
+                <div>
+                  {/* <Image src={service.image} alt={service.title} /> */}
+                </div>
               </div>
             </div>
           ))}
@@ -59,3 +59,10 @@ const Home: React.FC<Services> = async () => {
 };
 
 export default Home;
+
+// import Contact from "./contacts/page";
+// const Home = () => {
+//   return <Contact />;
+// };
+
+// export default Home;
